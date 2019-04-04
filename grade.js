@@ -27,7 +27,8 @@ grade.then(function (data) {
 	svg.append("path")
 		.datum(data[0].homework)
 		.classed("line", true)
-		.attr("d", line);
+		.attr("d", line)
+		.attr("fiil", "none");
 	var xAxis = d3.axisBottom(xScale);
 	var yAxis = d3.axisLeft(yScale);
 	svg.append("g")
